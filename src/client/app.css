@@ -26,6 +26,7 @@
 
 .menu-summary-left {
   font-weight: bold;
+  min-height: 36px;
 }
 .menu-summary-right {
   text-align: right;
@@ -72,6 +73,10 @@ li.item {
   padding: 10px;
   margin-bottom: 20px;
   position: relative;
+}
+
+li.item:hover {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 li.item h2 {
