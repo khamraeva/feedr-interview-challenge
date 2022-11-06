@@ -9,15 +9,15 @@
     "client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
     "server": "nodemon src/server/index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "test": "jest"
+    "test": "jest --forceExit"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.5.0",
     "express": "^4.16.3",
-    "styled-components": "^3.3.3",
     "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react-dom": "^16.5.2",
+    "styled-components": "^3.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -43,6 +43,7 @@
     "nodemon": "^1.17.3",
     "react-test-renderer": "^16.13.1",
     "style-loader": "^0.23.0",
+    "supertest": "^6.3.1",
     "url-loader": "^1.0.1",
     "webpack": "^4.5.0",
     "webpack-cli": "^3.0.8",
