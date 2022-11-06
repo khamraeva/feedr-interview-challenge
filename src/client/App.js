@@ -10,16 +10,17 @@ export default function App () {
   const [ searchValue, setSearchValue ] = useState('');
   const { pickedList, onAddPicked, onDeletePicked } = useMenuPicker();
   const dietaryList = useDietaries(pickedList);
-  const data = useFetchData(searchValue);
+  const menuData = useFetchData(searchValue);
 
   return (
-  <div className="wrapper">
-    <MenuSummary total={pickedList.length} dietaries={dietaryList}/>
-    <MenuBuilder pickItem={onAddPicked}
-                 previewList={pickedList}
-                 removeItem={onDeletePicked}
-                 menuData={data}
-                 setSearchValue={setSearchValue}
-                 searchValue={searchValue}/>
-  </div>
-)};
+    <div className="wrapper">
+      <MenuSummary total={pickedList.length} dietaries={dietaryList}/>
+      <MenuBuilder pickItem={onAddPicked}
+                  previewList={pickedList}
+                  removeItem={onDeletePicked}
+                  menuData={menuData}
+                  setSearchValue={setSearchValue}
+                  searchValue={searchValue}/>
+    </div>
+  );
+};
