@@ -21,3 +21,19 @@ yarn dev (or npm run dev)
 
 ## Run tests
 yarn test (or npm run test)
+
+# Implementation notes
+
+1. Completed the requirements
+2. Split UI to components
+3. Used React hooks for data management on Frontend
+4. Added search to the API endpoint
+5. Added throttling of API calls to avoid sending too many requests when user enters the search key
+6. Added unit tests for UI components and API endpoint
+
+## Futher improvements that can be done
+
+1. Add a spinner when data is loading from server
+2. Improve styles
+3. Add even more tests
+4. Add eslint to project
