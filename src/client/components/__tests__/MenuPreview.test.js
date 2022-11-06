@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import MenuPreview from './MenuPreview';
+import MenuPreview from '../MenuPreview';
 
 const previewListMockData = [
   {

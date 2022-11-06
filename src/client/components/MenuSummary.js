@@ -1,5 +1,5 @@
 import React from 'react';
-import TotalCount from './TotalCount/TotalCount';
+import TotalCount from './TotalCount';
 import DietariesTotalCount from './DietariesTotalCount';
 
 export default function MenuSummary(props) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import TotalCount from './TotalCount';
+import TotalCount from '../TotalCount';
 
 describe('TotalCount', () => {
   it('Count total selected number', () => {

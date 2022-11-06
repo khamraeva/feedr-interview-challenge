@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export default function useMenuPicker() {
-  const [pickedList, setPicketList] = useState([]);
+  const [ pickedList, setPicketList ] = useState([]);
   const onAddPicked = item => {
     const alreadyPicked = pickedList.find(picked => picked.id === item.id);
     return !alreadyPicked && setPicketList([...pickedList, item]);

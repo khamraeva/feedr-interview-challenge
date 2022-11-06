@@ -1,5 +1,5 @@
 import React from 'react';
-import Dietaries from '../Dietaries';
+import Dietaries from './Dietaries';
 
 export default function MenuPreview(props) {
   const { previewList, removeItem } = props;

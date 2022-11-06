@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 export default function useFetchData(searchString) {
     const params = searchString ? `?search=${searchString}` : '';
-    const [data, setData] = useState(null);
+    const [ data, setData ] = useState(null);
 
     useEffect(() => {
       const fetchData = async () => {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import MenuPreview from './MenuPreview/MenuPreview';
-import MenuList from './MenuList/MenuList';
+import MenuPreview from './MenuPreview';
+import MenuList from './MenuList';
 import Search from './Search';
 
 export default function MenuBuilder(props) {
